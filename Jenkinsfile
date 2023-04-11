@@ -8,6 +8,9 @@ pipeline {
         }
         
         stage('Deploy') {
+            when{
+                branch 'master'
+            }
             steps {
                bat 'python app.py'
             }
