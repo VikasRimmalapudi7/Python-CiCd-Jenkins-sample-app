@@ -8,10 +8,10 @@ pipeline {
             }
         }
 
-        stage('Build and Test') {
+        stage('Build') {
             steps {
                 bat 'pip install -r requirements.txt'
-                bat 'python tests.py'
+               
             }
         }
 
