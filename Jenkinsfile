@@ -1,15 +1,26 @@
 pipeline {
     agent any
+
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                bat 'pip install -r requirements.txt'
+                checkout scm
             }
         }
-        
-        stage('Deploy') {
+
+        stage('Build and Test') {
             steps {
-               bat 'python app.py'
+                bat 'pip install -r requirements.txt'
+                bat 'python tests.py'
+            }
+        }
+
+        stage('Deploy') {
+            when {
+                branch 'master'
+            }
+            steps {
+                bat 'python app.py'
             }
         }
     }
