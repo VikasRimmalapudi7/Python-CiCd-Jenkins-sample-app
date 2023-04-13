@@ -9,7 +9,7 @@ pipeline {
         
         stage('Deploy') {
             steps {
-               bat 'python app.py'
+               bat 'C:\\Users\\Coditas\\AppData\\Local\\Programs\\Python\\Python310\\python.exe\\python app.py'
             }
         }
     }
