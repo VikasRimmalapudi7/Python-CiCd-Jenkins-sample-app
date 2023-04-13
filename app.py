@@ -21,7 +21,14 @@ tasks = [
         'title': 'Task 2',
         'description': 'This is task 2',
         'done': False
+    },
+    {
+        'id': 4,
+        'title': 'Task 4',
+        'description': 'This is task 4',
+        'done': False
     }
+    
 ]
 
 # GET method to retrieve all tasks
