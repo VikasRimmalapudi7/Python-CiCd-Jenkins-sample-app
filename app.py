@@ -16,6 +16,12 @@ tasks = [
         'title': 'Task 2',
         'description': 'This is taskk 2',
         'done': False
+    },
+    {
+        'id': 3,
+        'title': 'Task 3',
+        'description': 'This is taskk 3',
+        'done': False
     }
     
 ]
