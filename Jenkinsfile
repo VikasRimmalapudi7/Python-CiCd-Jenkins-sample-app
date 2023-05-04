@@ -19,6 +19,7 @@ pipeline {
 
         stage('Build') {
             steps {
+                echo "this is TESTING branch"
                 bat 'C:\\Users\\Coditas\\AppData\\Local\\Programs\\Python\\Python310\\python.exe -m pip install -r requirements.txt'
             }
         }
